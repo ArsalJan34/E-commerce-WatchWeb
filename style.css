@@ -1,0 +1,52 @@
+:root {
+  /* Brand / Primary */
+  --color-primary: #0F766E;
+  /* Deep emerald teal */
+  --color-primary-hover: #115E59;
+
+  /* Accent / Highlight */
+  --color-accent: #D4AF37;
+  /* Luxury gold */
+  --color-accent-soft: #F5E6A8;
+
+  /* Backgrounds */
+  --color-bg-main: #0B0F14;
+  /* Rich dark background */
+  --color-bg-surface: #121826;
+  /* Cards / sections */
+  --color-bg-elevated: #1A2233;
+  /* Modals / dropdowns */
+
+  /* Text */
+  --color-text-primary: #E5E7EB;
+  /* Main text */
+  --color-text-secondary: #9CA3AF;
+  /* Muted text */
+  --color-text-inverted: #0B0F14;
+  /* Text on light/gold */
+
+  /* Borders & Dividers */
+  --color-border: #1F2937;
+  --color-border-light: #2A3448;
+
+  /* Status Colors */
+  --color-success: #22C55E;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-info: #3B82F6;
+
+  /* Buttons */
+  --color-btn-primary: var(--color-primary);
+  --color-btn-primary-text: #FFFFFF;
+  --color-btn-secondary: transparent;
+  --color-btn-secondary-text: var(--color-primary);
+
+  /* Inputs */
+  --color-input-bg: #121826;
+  --color-input-border: #1F2937;
+  --color-input-focus: var(--color-primary);
+
+  /* Shadows */
+  --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --shadow-medium: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
