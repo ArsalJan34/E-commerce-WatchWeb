@@ -73,9 +73,27 @@ body{
   border: var(--color-border) 2px solid;
   width: 90%;
   min-height: auto;
+  max-width: 500px;
   margin: 50px auto;
   padding: 40px 20px;
   background-color: var(--color-bg-surface);
   border-radius: 8px;
   box-shadow: var(--shadow-medium);
+}
+.FormContainer input,
+.FormContainer button{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.FormContainer button{
+  background: var(--color-btn-primary);
+  color: var(--color-text-primary);
+  border: none;
+  cursor: pointer;
+}
+.FormContainer h2 {
+  text-align: center;
 }
