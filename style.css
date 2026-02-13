@@ -1,55 +1,79 @@
 :root {
-  /* Brand / Primary */
-  --color-primary: #0F766E;
-  /* Deep emerald teal */
-  --color-primary-hover: #115E59;
+  /* =========================
+     Brand / Primary (Monochrome)
+  ========================== */
+  --color-primary: #111111;
+  /* Deep black */
+  --color-primary-hover: #000000;
+  /* Pure black */
 
   /* Accent / Highlight */
-  --color-accent: #D4AF37;
-  /* Luxury gold */
-  --color-accent-soft: #F5E6A8;
+  --color-accent: #1F1F1F;
+  /* Dark gray accent */
+  --color-accent-soft: #E5E5E5;
+  /* Soft gray highlight */
 
-  /* Backgrounds */
-  --color-bg-main: #0B0F14;
-  /* Rich dark background */
-  --color-bg-surface: #121826;
-  /* Cards / sections */
-  --color-bg-elevated: #1A2233;
-  /* Modals / dropdowns */
+  /* =========================
+     Backgrounds
+  ========================== */
+  --color-bg-main: #FFFFFF;
+  /* Main white background */
+  --color-bg-surface: #F5F5F5;
+  /* Light gray sections */
+  --color-bg-elevated: #EAEAEA;
+  /* Cards / modals */
 
-  /* Text */
-  --color-text-primary: #E5E7EB;
+  /* =========================
+     Text
+  ========================== */
+  --color-text-primary: #111111;
   /* Main text */
-  --color-text-secondary: #9CA3AF;
-  /* Muted text */
-  --color-text-inverted: #0B0F14;
-  /* Text on light/gold */
-  /* Font family */
-    --font-primary: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  /* Borders & Dividers */
-  --color-border: #1F2937;
-  --color-border-light: #2A3448;
+  --color-text-secondary: #6B7280;
+  /* Muted gray text */
+  --color-text-inverted: #FFFFFF;
+  /* Text on dark */
 
-  /* Status Colors */
-  --color-success: #22C55E;
-  --color-warning: #F59E0B;
-  --color-error: #EF4444;
-  --color-info: #3B82F6;
+  /* =========================
+     Font
+  ========================== */
+  --font-primary: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
-  /* Buttons */
-  --color-btn-primary: var(--color-primary);
+  /* =========================
+     Borders & Dividers
+  ========================== */
+  --color-border: #D1D5DB;
+  /* Standard border */
+  --color-border-light: #E5E7EB;
+  /* Subtle divider */
+
+  /* =========================
+     Status Colors (Neutralized)
+  ========================== */
+  --color-success: #2E2E2E;
+  --color-warning: #4B5563;
+  --color-error: #000000;
+  --color-info: #374151;
+
+  /* =========================
+     Buttons
+  ========================== */
+  --color-btn-primary: #111111;
   --color-btn-primary-text: #FFFFFF;
-  --color-btn-secondary: transparent;
-  --color-btn-secondary-text: var(--color-primary);
+  --color-btn-secondary: #FFFFFF;
+  --color-btn-secondary-text: #111111;
 
-  /* Inputs */
-  --color-input-bg: #121826;
-  --color-input-border: #1F2937;
-  --color-input-focus: var(--color-primary);
+  /* =========================
+     Inputs
+  ========================== */
+  --color-input-bg: #FFFFFF;
+  --color-input-border: #D1D5DB;
+  --color-input-focus: #000000;
 
-  /* Shadows */
-  --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.25);
-  --shadow-medium: 0 10px 30px rgba(0, 0, 0, 0.4);
+  /* =========================
+     Shadows (Subtle, Clean)
+  ========================== */
+  --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-medium: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 *{
   margin: 0;
@@ -63,18 +87,32 @@ body{
   background-color: var(--color-bg-main);
   color: var(--color-text-primary);
 }
-.home{
+.container{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+height: 100vh;
+}
+.home{
+  flex: 1;
+    background: white;
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+.Forms{
+  flex: 1;
+    background: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+
+
 }
 .FormContainer{
-  border: var(--color-border) 2px solid;
-  width: 90%;
-  min-height: auto;
-  max-width: 500px;
-  margin: 50px auto;
+  width: 100%;
+ height: 100%;
   padding: 40px 20px;
   background-color: var(--color-bg-surface);
   border-radius: 8px;
@@ -87,13 +125,18 @@ body{
   margin: 10px 0;
   border-radius: 4px;
   border: 1px solid #ccc;
+
 }
 .FormContainer button{
+  display: inline-block;
   background: var(--color-btn-primary);
-  color: var(--color-text-primary);
+  color: var(--color-btn-primary-text);
   border: none;
   cursor: pointer;
 }
 .FormContainer h2 {
   text-align: center;
+}
+.FormContainer button:hover{
+
 }
