@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="firebase.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo"> <i class='bx bxs-color'></i>ELVION</div>
+  </header>
+  <div class="container">
+<section class="home">
+    <section class="auth-left">
+      <div class="left-content">
+        <h1>Welcome Back</h1>
+        <p>Create account to get new updates</p>
+        <button class="outline-btn">Learn More</button>
+      </div>
+    </section>
+</section>
+<section class="Forms">
+<div class="FormContainer">
+  <h2>Create New Account</h2>
+  <h3>Name</h3>
+  <input type="name" id="name" placeholder="Enter Your Name">
+  <h3>Email</h3>
+  <input type="email" id="email" placeholder="Enter Your Email">
+  <h3>Password</h3>
+  <input type="password" id="password" placeholder="Enter Your Password">
+  <button onclick="SignUp()">Sign Up</button>
+
+  <button class="google-btn" onclick="googleAuth()">
+    <i class='bx bxl-google'></i>
+  </button>
+  <p>Already Have An Account?<a href="./login.html">Login In</a></p>
+  </div>
+</section>
+</div>
+</body>
+<script src="script.js"></script>
+
+</html>
